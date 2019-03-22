@@ -1,0 +1,1 @@
+<center><img src="<?php echo PUBLIC_URL;?>images/index.jpg" width="80%"></center>

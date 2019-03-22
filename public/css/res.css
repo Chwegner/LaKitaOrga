@@ -1,0 +1,421 @@
+/*
+Standardschrift
+ */
+@font-face {
+    font-family: RobotoBlack;
+    src: url("Roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: RobotoBlackItalic;
+    src: url("Roboto/Roboto-BlackItalic.ttf");
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url("Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: RobotoBoldItalic;
+    src: url("Roboto/Roboto-BoldItalic.ttf");
+}
+@font-face {
+    font-family: RobotoItalic;
+    src: url("Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url("Roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: RobotoLightItalic;
+    src: url("Roboto/Roboto-LightItalic.ttf");
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url("Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: RobotoMediumItalic;
+    src: url("Roboto/Roboto-MediumItalic.ttf");
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoThin;
+    src: url("Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+    font-family: RobotoThinItalic;
+    src: url("Roboto/Roboto-ThinItalic.ttf");
+}
+/*
+Ende Standardschrift
+-----------------------------------------------
+ */
+
+/*
+Standard CSS-Farbschema:
+#006B94
+#004661
+#003447
+#3B7B94
+#00A3E0
+*/
+
+/*
+golbale Anweisungen
+ */
+ /*universalselektor = setzt alle Abstände auf 0 --> macht weitere Anweisungen gültig*/
+*{	
+	margin:  0em;
+    padding: 0em;
+  }
+
+a
+   {  
+   text-decoration: none;
+   color: #00A3E0;
+   }
+a:hover 
+	{
+	background-color: #FFC88D;
+	color: #1C1C1C;
+	}
+body
+   {
+    background-color:#E0E5E8;
+    font-family: RobotoRegular;
+	font-size: 1.0em;
+	color: #1C1C1C;
+	margin:  1.5em;
+	
+   }
+h1
+   {
+	font-size: 1.75em;
+	font-family: RobotoBlack;
+	color: #08088A;
+	text-align: center;
+   }
+	
+h2 
+   {
+	font-size: 1.5em;
+	font-family: RobotoBlack;
+	color: #08088A;
+	text-align: center;
+	 
+    }
+h3
+   {
+	font-size: 1.25em;
+	font-family: RobotoBlack;
+	color: #08088A;
+	text-align: center;
+   }
+ article
+   {
+	   font-size: 1em;
+   }
+p 
+    {   
+     text-align: justify;  
+	 font-size: 1.125em;
+    }
+p.p1{
+     text-align: center;
+    } 
+figure
+    {
+	 width: 80%;/*Kann auch später geändert werden!!!*/
+	 height: auto;
+	/* float: left;*/
+	 /*margin: 0? 1%? 1%? 0?;*/
+	 border: 0.0625em solid blue;
+    }
+ 
+figcaption
+    {
+	 text-align: center;
+	 /*font-style: italic;*/
+	 font-family: RobotoBoldItalic;
+    }
+
+	
+legend
+	{
+	font-size: 1em;
+	color: yellow;
+	background: #FFF;
+	border: 0.0625em solid #999;
+	border-radius: 0.625em;
+	
+	}
+	
+	
+form{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 2.0em;
+	/*padding: 1.25em;
+	margin-top: 0.15em;
+	margin-left: auto;
+	margin-right: auto;*/
+	/*background: #006B94;*/
+	font-size: 1em;
+	/*background: rgba(0, 128, 128, .6);
+	color: #FFF;*/
+	/*border-radius: 0.625em;
+	-webkit-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	box-shadow: 0.1875em 0.1875em 0.3125em #222;
+	-webkit-box-shadow: 0.1875em 0.1875em 0.3125em #222;
+	-moz-box-shadow: 0.1875em 0.1875em 0.3125em #222;	*/	
+   }
+.form_klein{
+	width: 90%;
+}
+label
+   {
+		display: inline-block;
+		width: 30%;
+        /*padding-right: 1.0em;*//*Vor der Korrektur: padding-right: 1.5em;  */
+		color: blue;
+
+	}
+fieldset
+	{
+	/*float: left;*/
+	width: 25em;
+	background: #fff;
+	border: none;
+	margin-left: 2.5em;
+	font-size: 1em;
+    }
+ /*
+input
+	{
+	border: 0.0625em solid #999;
+	width: auto;
+	padding: 0.1875em 0.5em 0.1875em 0.5em;
+	border-radius: 0.3125em;
+	}*/
+	
+textarea
+	{
+	padding: 0.1875em 0.6875em 0.6875em;
+	width: auto;
+	font-size: 1em;
+	
+	resize: vertical;/*nur nach unten skalierbar*/
+	}
+	
+select
+	{
+	/*width: 20em;*/
+	/*padding:3px 0 3px 8px;*/
+	font-size: 1em;
+	}
+	
+select option
+	{
+	background-color: #bfe6fb;
+	padding-left: 1em;
+	font-size: 1em;
+	}
+	
+	select option:nth-child(odd)
+	/*:nth-child = jedes Kind,(odd) = jedes ungerade Kind*/
+	{
+	background-color: #fff;
+	}
+	input{
+		padding: 0.3em;
+	}
+	
+input[type="submit"]
+	{
+	/*float:left;*/
+	/*width: auto;*/
+
+	color: blue;
+	font-family: RobotoBold;
+	font-size: 1em;
+	/*background-color:white;
+	background-image: none;
+	font-weight: bold;*/
+	/*margin: 1.25em 1.25em 1.25em 0;
+	box-shadow: 0em 0em 0.0375em #eee;*/
+	}
+
+/*
+	input[type="text"]
+	{
+	background-color: #bfe6fb;
+	font-family: RobotoBold;
+	font-size: 1em;
+	}
+	
+   input[type="reset"]
+	{
+	color: blue;
+	background-color:#bfe6fb;
+	font-family: RobotoBold;
+	font-size: 1em;
+	}
+*/
+fieldset p
+	{
+	margin-bottom: 0.9375em;
+    font-size: 1em;	
+	}
+ 
+fieldset h2
+	{
+	margin-bottom: 1.25em;	
+    font-size: 1em;	
+	}
+
+
+	/*
+	eltern anlegen styles
+	 */
+.eltern_w
+    {
+	width: 50%;
+	float: left;
+    }
+.ellis_rechts
+    {
+	  width: 50%;
+	  float: right;
+    }
+#wrapper 
+    {
+     width: 80%;/*alte skalierung: width: 56.26em */
+     height: auto;           
+	 border: 0.0625em solid #1C1C1C;   /* 1px starke graue Linie*/
+     margin: 2.5em auto 0 auto;
+    }
+ #header 
+    {
+	width: 80%;/*alte skalierung: width: 56.26em */
+	height: 10em;
+	background-image: url("kitaGebuede.png");
+	margin: 0 0 0.625em 0;
+	}
+	
+navigation 
+    {
+	width: 80%;/*alte skalierung: width: 56.26em */
+	height: 1.875em;
+	/*padding: 8px 0 0 40px;*/
+	background-color: #5882FA;
+	border-top: 0.0625em solid #FFF;
+	}
+	
+#content 
+	{
+	position: relative;	/*wird der CONTENT das Elternelement 
+	für alle in ihm absolut:positionierten Elemente*/
+	width: 80%;
+	height: 21.25em;
+	/*background-color: #FFF;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-bottom: 1.25em;
+	padding-top: 0.625em;*/ /* bei allen paddings noch unklar */
+	}
+	
+#footer 
+	{
+	width: 80%;/*alte skalierung: width: 56.26em */
+	height: 1.875em;
+	background-color: #5882FA;
+	/*background-image: -----------------
+	Hier kann man ein Bild einfügen!!*/
+	}
+
+#navigation ul 
+    {
+	list-style-type: none; 
+	/*kein Listenpunkt ----> Bei Bedarf kann man diese wieder herstellen
+	mit yes, glaube ich!!!*/
+	}
+	
+	/*hier wird der Ankertag in der Navigationsliste selektiert*/
+#navigation ul li a 
+	{
+	display: block;	/*umwandeln in ein Blockelement*/
+	/*float: left;*/	/*alle Listeneinträge stehen jetzt nebeneinander*/
+	height: 1.25em;
+	width: 80%;
+	background-color: #FF982B;
+	/*color: #fff;*/
+	text-align: left;
+	/*padding-top: 2px;
+	margin-right: 5px;*/
+	text-decoration: none;	/*keine Unterstreichung beim Ankertag*/
+	font-size: 0.875em;
+	border-radius: 0.1875em;
+	}
+	/*pseudoklasse a:hover = überfahren des Links mit der Maus*/
+#navigation ul li a:hover 
+	{
+	background-color: #FFC88D;
+	color: #1C1C1C;
+	}
+table
+	{
+	margin-left: 15%;
+	/*padding-left: 30%;*/
+	display: table;	/*display:table = Gestalt einer Tabelle*/
+	border: 0.0625em solid black;
+	width: 70%;
+	border-collapse: collapse;
+	text-align: left;
+	}
+.adminTables td  
+	{
+	
+	word-spacing: 1.5em;
+	text-align: left;
+	}
+.adminTables tr th
+	{
+	
+	word-spacing: 1.5em;
+	text-align: left;
+	
+	
+	}
+span
+	{
+	
+	/*word-spacing: 1.5em;*/
+	text-align: left;
+	font-size: 1em;
+	 color: blue;
+	
+	}
+button
+	{
+	
+	/*word-spacing: 1.5em;
+	text-align: left;*/
+	font-size: 1em;
+	color: blue;
+	padding: 0.3em;
+	}
+th, td 
+    { 
+      width:3.5em; 
+      font-size: 1em;
+      border:0.0625em solid black; 
+	  border-collapse: collapse;
+      padding:0.3125em
+              
+    } 
+	
+/*Ende globale Anweisungen --------------*/
